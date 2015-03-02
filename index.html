@@ -12,13 +12,14 @@
 	</head>
 <body>
 <br/>
-<div>Content here</div>
+<div id="maincontent" style="background-color:#CEFEAE; width: 150px; margin: 10px; padding: 10px; cursor: move;">Content here</div>
 <div id="dialog" title="Hello world!">
 <p>Sample, blah-blah</p>
 </div>
 <script type="text/javascript">
 	 $(function() {
 		$( "#dialog" ).dialog();
+		$( "#maincontent" ).draggable();
 	});
 </script>
 </body>
